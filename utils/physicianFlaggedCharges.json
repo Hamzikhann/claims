@@ -1,0 +1,697 @@
+[
+	{
+		"servicingPhysicianId": 9882406871,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "547.7"
+	},
+	{
+		"servicingPhysicianId": 6807646358,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 7882858252,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "470.8"
+	},
+	{
+		"servicingPhysicianId": 5111491524,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 4517977705,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "796.3000000000001"
+	},
+	{
+		"servicingPhysicianId": 9961583823,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "781.2"
+	},
+	{
+		"servicingPhysicianId": 1033456526,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 6773904648,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 1658318202,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 6998156870,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1347.2"
+	},
+	{
+		"servicingPhysicianId": 8565029328,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "712.1"
+	},
+	{
+		"servicingPhysicianId": 9729262547,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "964.5"
+	},
+	{
+		"servicingPhysicianId": 2345874492,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1347.2"
+	},
+	{
+		"servicingPhysicianId": 8399308760,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "346.6"
+	},
+	{
+		"servicingPhysicianId": 7874988451,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1093.6"
+	},
+	{
+		"servicingPhysicianId": 4345160771,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1173.5"
+	},
+	{
+		"servicingPhysicianId": 1664207848,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "346.6"
+	},
+	{
+		"servicingPhysicianId": 164489513,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "408.4"
+	},
+	{
+		"servicingPhysicianId": 4002961290,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 9844986367,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "664.0"
+	},
+	{
+		"servicingPhysicianId": 2084096191,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "673.6"
+	},
+	{
+		"servicingPhysicianId": 1946574176,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "226.6"
+	},
+	{
+		"servicingPhysicianId": 8481883107,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "296.3"
+	},
+	{
+		"servicingPhysicianId": 1313481140,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "5989.2"
+	},
+	{
+		"servicingPhysicianId": 1643959489,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1593.6"
+	},
+	{
+		"servicingPhysicianId": 3076848310,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "3807.9"
+	},
+	{
+		"servicingPhysicianId": 8051092060,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1005.0"
+	},
+	{
+		"servicingPhysicianId": 3406902581,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "872.6"
+	},
+	{
+		"servicingPhysicianId": 597948763,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 7272123613,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1129.4"
+	},
+	{
+		"servicingPhysicianId": 843230123,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 5040521237,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "215.0"
+	},
+	{
+		"servicingPhysicianId": 2594176015,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "655.3"
+	},
+	{
+		"servicingPhysicianId": 1665639091,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "988.1"
+	},
+	{
+		"servicingPhysicianId": 228930824,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "576.0"
+	},
+	{
+		"servicingPhysicianId": 4700109043,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "386.3"
+	},
+	{
+		"servicingPhysicianId": 4925463262,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1035.0"
+	},
+	{
+		"servicingPhysicianId": 5935899673,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "327.5"
+	},
+	{
+		"servicingPhysicianId": 2664335008,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 7301011125,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "964.5"
+	},
+	{
+		"servicingPhysicianId": 3951145086,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "277.8"
+	},
+	{
+		"servicingPhysicianId": 8697482989,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 6010136797,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1301.6"
+	},
+	{
+		"servicingPhysicianId": 8356404913,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1897.4"
+	},
+	{
+		"servicingPhysicianId": 9616292374,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1226.9"
+	},
+	{
+		"servicingPhysicianId": 2184804949,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 5787162457,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "327.5"
+	},
+	{
+		"servicingPhysicianId": 6766597757,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "312.5"
+	},
+	{
+		"servicingPhysicianId": 2816017578,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "962.4"
+	},
+	{
+		"servicingPhysicianId": 6384883963,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 8022899831,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 7481398045,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "4763.5"
+	},
+	{
+		"servicingPhysicianId": 5368973401,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 9463344341,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "346.6"
+	},
+	{
+		"servicingPhysicianId": 3796664361,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1109.3"
+	},
+	{
+		"servicingPhysicianId": 5064115866,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1076.5"
+	},
+	{
+		"servicingPhysicianId": 8207899456,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "673.6"
+	},
+	{
+		"servicingPhysicianId": 2052541087,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1299.0"
+	},
+	{
+		"servicingPhysicianId": 58105397,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 296876109,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 5920582001,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1574.1999999999998"
+	},
+	{
+		"servicingPhysicianId": 888901330,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 2443258442,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1154.2"
+	},
+	{
+		"servicingPhysicianId": 2182085617,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "673.6"
+	},
+	{
+		"servicingPhysicianId": 2968726671,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "629.2"
+	},
+	{
+		"servicingPhysicianId": 3053611933,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "129.0"
+	},
+	{
+		"servicingPhysicianId": 9624318363,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "749.5999999999999"
+	},
+	{
+		"servicingPhysicianId": 1973668724,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1249.8000000000002"
+	},
+	{
+		"servicingPhysicianId": 3538501348,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "763.6"
+	},
+	{
+		"servicingPhysicianId": 563968700,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "454.0"
+	},
+	{
+		"servicingPhysicianId": 799206887,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1758.5"
+	},
+	{
+		"servicingPhysicianId": 5403626056,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1168.8"
+	},
+	{
+		"servicingPhysicianId": 3026133875,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 9637821162,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "706.7"
+	},
+	{
+		"servicingPhysicianId": 3129809882,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "928.1"
+	},
+	{
+		"servicingPhysicianId": 131228953,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1258.2"
+	},
+	{
+		"servicingPhysicianId": 7683764238,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1286.5"
+	},
+	{
+		"servicingPhysicianId": 3098298778,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 5977325740,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "350.4"
+	},
+	{
+		"servicingPhysicianId": 2839148479,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 2567131679,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "880.1"
+	},
+	{
+		"servicingPhysicianId": 4613649973,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "2865.9"
+	},
+	{
+		"servicingPhysicianId": 6955475791,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "126.9"
+	},
+	{
+		"servicingPhysicianId": 9440251127,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1323.7"
+	},
+	{
+		"servicingPhysicianId": 8213446837,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "576.0"
+	},
+	{
+		"servicingPhysicianId": 7699214279,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "224.7"
+	},
+	{
+		"servicingPhysicianId": 2876266200,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1335.8999999999999"
+	},
+	{
+		"servicingPhysicianId": 3384431695,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1600.1999999999998"
+	},
+	{
+		"servicingPhysicianId": 9075883812,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "773.2"
+	},
+	{
+		"servicingPhysicianId": 6462076849,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "688.2"
+	},
+	{
+		"servicingPhysicianId": 3637425859,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1544.8999999999999"
+	},
+	{
+		"servicingPhysicianId": 6207630138,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "682.1"
+	},
+	{
+		"servicingPhysicianId": 2910729494,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1777.0"
+	},
+	{
+		"servicingPhysicianId": 8454962534,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 3898279561,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "991.3"
+	},
+	{
+		"servicingPhysicianId": 3389073658,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "535.6"
+	},
+	{
+		"servicingPhysicianId": 690879673,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 7548080653,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "5426.0"
+	},
+	{
+		"servicingPhysicianId": 5567682532,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 1095583719,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 6800073113,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1301.6"
+	},
+	{
+		"servicingPhysicianId": 4127689248,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "254.6"
+	},
+	{
+		"servicingPhysicianId": 5846838199,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1113.2"
+	},
+	{
+		"servicingPhysicianId": 8753816409,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "443.0"
+	},
+	{
+		"servicingPhysicianId": 8439990853,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "988.1"
+	},
+	{
+		"servicingPhysicianId": 6585316279,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "995.5"
+	},
+	{
+		"servicingPhysicianId": 2585973145,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1200.5"
+	},
+	{
+		"servicingPhysicianId": 7055222232,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 6950183802,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 2323005098,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 3498756938,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "2910.3"
+	},
+	{
+		"servicingPhysicianId": 6412728021,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1097.4"
+	},
+	{
+		"servicingPhysicianId": 9470319244,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "129.0"
+	},
+	{
+		"servicingPhysicianId": 5959271996,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1362.8"
+	},
+	{
+		"servicingPhysicianId": 3930262720,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "419.4"
+	},
+	{
+		"servicingPhysicianId": 717672156,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "694.9"
+	},
+	{
+		"servicingPhysicianId": 7895429477,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "129.0"
+	},
+	{
+		"servicingPhysicianId": 1004660461,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1339.6"
+	},
+	{
+		"servicingPhysicianId": 7998536470,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "747.0"
+	},
+	{
+		"servicingPhysicianId": 3665692109,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1732.4"
+	},
+	{
+		"servicingPhysicianId": 9442626865,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "90.0"
+	},
+	{
+		"servicingPhysicianId": 3153644215,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1066.4"
+	},
+	{
+		"servicingPhysicianId": 8894574338,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1192.0"
+	},
+	{
+		"servicingPhysicianId": 3806728350,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "2978.9"
+	},
+	{
+		"servicingPhysicianId": 2827390005,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1143.3"
+	},
+	{
+		"servicingPhysicianId": 8295207865,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "355.6"
+	},
+	{
+		"servicingPhysicianId": 1385407285,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "290.2"
+	},
+	{
+		"servicingPhysicianId": 7275086136,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "700.5"
+	},
+	{
+		"servicingPhysicianId": 3204358873,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "913.8"
+	},
+	{
+		"servicingPhysicianId": 769029809,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1573.3"
+	},
+	{
+		"servicingPhysicianId": 2124734228,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "129.0"
+	},
+	{
+		"servicingPhysicianId": 3733829210,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "129.0"
+	},
+	{
+		"servicingPhysicianId": 2134188875,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1115.6"
+	},
+	{
+		"servicingPhysicianId": 8861783844,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "240.7"
+	},
+	{
+		"servicingPhysicianId": 8436120346,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "883.0"
+	},
+	{
+		"servicingPhysicianId": 5022503754,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1415.0"
+	},
+	{
+		"servicingPhysicianId": 6196941363,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "1208.1"
+	},
+	{
+		"servicingPhysicianId": 9114312598,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "175.4"
+	},
+	{
+		"servicingPhysicianId": 178744462,
+		"claimSubmissionYear": 2023,
+		"flaggedChargedAmount": "475.6"
+	}
+]

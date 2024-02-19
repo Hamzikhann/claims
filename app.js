@@ -55,11 +55,11 @@ class Server {
 			console.log(`LMS server is listening on this ${port}`);
 		}
 
-		if (process.env.CORN_JOB == true) {
-			cron.schedule("*/1 * * * *", () => {
-				cornJob.checkCourseCompletion();
-			});
-		}
+		// if (process.env.CORN_JOB == true) {
+		// 	cron.schedule("*/1 * * * *", () => {
+		// 		cornJob.checkCourseCompletion();
+		// 	});
+		// }
 	}
 }
 

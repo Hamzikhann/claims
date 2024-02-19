@@ -17,7 +17,7 @@ const CourseAchivements = db.courseAchievements;
 const User = db.users;
 const Client = db.clients;
 
-exports.checkCourseCompletion = async (req, res) => {
+const checkCourseCompletion = async (req, res) => {
 	try {
 		const date = new Date();
 		const dateString = date.toISOString().split("T")[0];
