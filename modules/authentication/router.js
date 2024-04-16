@@ -15,6 +15,8 @@ router.post("/reset/password/:token", jwt.resetPasswordProtect, authcontroller.r
 router.post("/diagnose", authcontroller.createDiagnoses);
 router.post("/claims", authcontroller.createClaims);
 router.post("/claims/providers", authcontroller.createClaimProviders);
+router.post("/claims/procedures", authcontroller.createClaimProcedures);
+router.post("/claims/diagnoses", authcontroller.createClaimDiagnoses);
 router.post("/physicianFlagged", authcontroller.createPhysicianFlaggedTop);
 
 module.exports = router;

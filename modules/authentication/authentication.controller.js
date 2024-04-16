@@ -494,43 +494,76 @@ exports.createPhysicianFlaggedTop = async (req, res) => {
 			} else {
 				console.log("Connected to database");
 
-				// let physicianFlgged = [];
-				// let physicianFlggedCharges = [];
+				let physicianFlgged = [];
+				let physicianFlggedCharges = [];
 				// for (let e of physicianFlaggedChargesTop) {
-				// 	let findProvider = await Providers.findOne({ where: { providerId: e.servicingPhysicianId } });
+				// 	// let findProvider = await Providers.findOne({ where: { providerId: e.servicingPhysicianId } });
+				// 	const selectQueryForAppProviders = `SELECT * FROM app_providers WHERE providerId = ?`;
 
-				// 	let physicianObj = {
-				// 		providerId: findProvider.id,
-				// 		claimSubmissionYear: e.claimSubmissionYear,
-				// 		top1Hcpcs: e.top1Hcpcs,
-				// 		top1HcpcsDescription: e.top1HcpcsDescription,
-				// 		top1FlaggedAmt: e.top1FlaggedAmt,
-				// 		top2Hcpcs: e.top2Hcpcs,
-				// 		top2HcpcsDescription: e.top2HcpcsDescription,
-				// 		top2FlaggedAmt: e.top2FlaggedAmt,
-				// 		top3Hcpcs: e.top3Hcpcs,
-				// 		top3HcpcsDescription: e.top3HcpcsDescription,
-				// 		top3FlaggedAmt: e.top3FlaggedAmt
-				// 	};
-
-				// 	physicianFlgged.push(physicianObj);
+				// 	connection.query(selectQueryForAppProviders, [e.servicingPhysicianId], (err, results, fields) => {
+				// 		if (err) {
+				// 			console.error("Error executing query:", err);
+				// 			return;
+				// 		} else {
+				// 			console.log("Connected to database");
+				// 			let physicianObj = {
+				// 				providerId: results[0].id,
+				// 				claimSubmissionYear: e.claimSubmissionYear,
+				// 				top1Hcpcs: e.top1Hcpcs,
+				// 				top1HcpcsDescription: e.top1HcpcsDescription,
+				// 				top1FlaggedAmt: e.top1FlaggedAmt,
+				// 				top2Hcpcs: e.top2Hcpcs,
+				// 				top2HcpcsDescription: e.top2HcpcsDescription,
+				// 				top2FlaggedAmt: e.top2FlaggedAmt,
+				// 				top3Hcpcs: e.top3Hcpcs,
+				// 				top3HcpcsDescription: e.top3HcpcsDescription,
+				// 				top3FlaggedAmt: e.top3FlaggedAmt
+				// 			};
+				// 			const physicianFlaggedChargesTopQuery = `INSERT INTO app_physicianflaggedchargestophcpcs SET ?`;
+				// 			connection.query(physicianFlaggedChargesTopQuery, physicianObj, (err, results, fields) => {
+				// 				if (err) {
+				// 					console.error("Error inserting data into Members table:", err);
+				// 					return;
+				// 				}
+				// 				console.log("physicianFlaggedChargesTop data inserted successfully");
+				// 			});
+				// 		}
+				// 	});
 				// }
-				// for (let e of physicianFlaggedCharges) {
-				// 	let findProvider = await Providers.findOne({ where: { providerId: e.servicingPhysicianId } });
-				// 	console.log(e.flaggedChargedAmount);
-				// 	let physicianChargesObj = {
-				// 		providerId: findProvider.id,
-				// 		claimSubmissionYear: e.claimSubmissionYear,
-				// 		flaggedChargedAmount: e.flaggedChargedAmount
-				// 	};
+				for (let e of physicianFlaggedCharges) {
+					// let findProvider = await Providers.findOne({ where: { providerId: e.servicingPhysicianId } });
+					// console.log(e.flaggedChargedAmount);
 
-				// 	physicianFlggedCharges.push(physicianChargesObj);
-				// }
+					const selectQueryForAppProviders = `SELECT * FROM app_providers WHERE providerId = ?`;
+
+					connection.query(selectQueryForAppProviders, [e.servicingPhysicianId], (err, results, fields) => {
+						if (err) {
+							console.error("Error executing query:", err);
+							return;
+						} else {
+							console.log("Connected to database");
+							let physicianChargesObj = {
+								providerId: results[0].id,
+								claimSubmissionYear: e.claimSubmissionYear,
+								flaggedChargedAmount: e.flaggedChargedAmount
+							};
+
+							const physicianFlaggedChargesQuery = `INSERT INTO app_physicianflaggedcharges SET ?`;
+							connection.query(physicianFlaggedChargesQuery, physicianChargesObj, (err, results, fields) => {
+								if (err) {
+									console.error("Error inserting data into Members table:", err);
+									return;
+								}
+								console.log("app_physicianflaggedcharges data inserted successfully");
+							});
+						}
+					});
+				}
 
 				// let createPhysicianFlaggedTop = await PhysicianFlaggedTop.bulkCreate(physicianFlgged);
 				// let createPhysicianFlaggedCharges = await PhysicianFlaggedCharges.bulkCreate(physicianFlggedCharges);
 
-				// res.send({ physicianFlgged, physicianFlggedCharges });
+				res.send({ physicianFlaggedCharges });
 			}
 		});
 	} catch (err) {
@@ -697,7 +730,7 @@ exports.createClaimDiagnoses = async (req, res) => {
 					// };
 					let claimDiagnosesObj = {};
 					// let claimProcedureObj = {};
-					const selectQueryForClaims = `SELECT * FROM app_claims WHERE code = ?`;
+					const selectQueryForClaims = `SELECT * FROM app_claims WHERE claimId = ?`;
 
 					connection.query(selectQueryForClaims, [e.claimId], (err, results, fields) => {
 						if (err) {
@@ -709,25 +742,45 @@ exports.createClaimDiagnoses = async (req, res) => {
 							claimDiagnosesObj.claimId = results[0].id;
 							// claimProcedureObj.claimId = results[0].id;
 							console.log("Claim:", results[0].id);
-
-							const selectQueryForDiagnoses = `SELECT * FROM app_claimdiagnoses WHERE providerId = ?`;
-							connection.query(selectQueryForDiagnoses, [diag.code], (err, results, fields) => {
-								if (err) {
-									console.error("Error executing query:", err);
-									return;
-								} else {
-									claimDiagnosesObj.diagnosisId = results[0].id;
-									console.log("diagnoses:", results[0].id);
-									const claimsDiagnosesQuery = `INSERT INTO app_claimdiagnoses SET ?`;
-									connection.query(claimsDiagnosesQuery, claimDiagnosesObj, (err, results, fields) => {
-										if (err) {
-											console.error("Error inserting data into Members table:", err);
-											return;
-										}
-										console.log("ClaimProvider data inserted successfully");
-									});
-								}
-							});
+							for (let diag of e.diagnoses) {
+								const selectQueryForappDiagnoses = `SELECT * FROM app_diagnoses WHERE code = ?`;
+								connection.query(selectQueryForappDiagnoses, [diag.code], (err, results, fields) => {
+									if (err) {
+										console.error("Error executing query:", err);
+										return;
+									} else {
+										claimDiagnosesObj.diagnosisId = results[0].id;
+										console.log("diag:", diag.code);
+										const claimDiagnosesQuery = `INSERT INTO app_claimdiagnoses SET ?`;
+										connection.query(claimDiagnosesQuery, claimDiagnosesObj, (err, results, fields) => {
+											if (err) {
+												console.error("Error inserting data into Members table:", err);
+												return;
+											}
+											console.log("claimDiagnoses data inserted successfully");
+										});
+									}
+								});
+								diagnoses.push(claimDiagnosesObj);
+							}
+							// const selectQueryForDiagnoses = `SELECT * FROM app_claimdiagnoses WHERE providerId = ?`;
+							// connection.query(selectQueryForDiagnoses, [diag.code], (err, results, fields) => {
+							// 	if (err) {
+							// 		console.error("Error executing query:", err);
+							// 		return;
+							// 	} else {
+							// 		claimDiagnosesObj.diagnosisId = results[0].id;
+							// 		console.log("diagnoses:", results[0].id);
+							// 		const claimsDiagnosesQuery = `INSERT INTO app_claimdiagnoses SET ?`;
+							// 		connection.query(claimsDiagnosesQuery, claimDiagnosesObj, (err, results, fields) => {
+							// 			if (err) {
+							// 				console.error("Error inserting data into Members table:", err);
+							// 				return;
+							// 			}
+							// 			console.log("ClaimProvider data inserted successfully");
+							// 		});
+							// 	}
+							// });
 						}
 					});
 
@@ -820,7 +873,7 @@ exports.createClaimProcedures = async (req, res) => {
 					// };
 					// let claimDiagnosesObj = {};
 					let claimProcedureObj = {};
-					const selectQueryForClaims = `SELECT * FROM app_claims WHERE code = ?`;
+					const selectQueryForClaims = `SELECT * FROM app_claims WHERE claimId = ?`;
 
 					connection.query(selectQueryForClaims, [e.claimId], (err, results, fields) => {
 						if (err) {
@@ -833,24 +886,50 @@ exports.createClaimProcedures = async (req, res) => {
 							claimProcedureObj.claimId = results[0].id;
 							console.log("Claim:", results[0].id);
 
-							const selectQueryForDiagnoses = `SELECT * FROM app_claimdiagnoses WHERE providerId = ?`;
-							connection.query(selectQueryForDiagnoses, [diag.code], (err, results, fields) => {
-								if (err) {
-									console.error("Error executing query:", err);
-									return;
-								} else {
-									claimDiagnosesObj.diagnosisId = results[0].id;
-									console.log("diagnoses:", results[0].id);
-									const claimsDiagnosesQuery = `INSERT INTO app_claimdiagnoses SET ?`;
-									connection.query(claimsDiagnosesQuery, claimDiagnosesObj, (err, results, fields) => {
-										if (err) {
-											console.error("Error inserting data into Members table:", err);
-											return;
-										}
-										console.log("ClaimProvider data inserted successfully");
-									});
-								}
-							});
+							for (let procedure of e.flaggedProcedureCodes) {
+								claimProcedureObj.service_line_identifier = procedure.service_line_identifier;
+								claimProcedureObj.amountCharged = procedure.amountCharged;
+								const selectQueryForAppProcedure = `SELECT * FROM app_procedures WHERE code = ?`;
+								var proc;
+								connection.query(selectQueryForAppProcedure, [procedure.code], (err, results, fields) => {
+									if (err) {
+										console.error("Error executing query:", err);
+										return;
+									} else {
+										claimProcedureObj.procedureId = results[0].id;
+										console.log("proc:", results[0].id);
+										const claimsProceduresQuery = `INSERT INTO app_claimprocedures SET ?`;
+										connection.query(claimsProceduresQuery, claimProcedureObj, (err, results, fields) => {
+											if (err) {
+												console.error("Error inserting data into Members table:", err);
+												return;
+											}
+											console.log("claimsProcedures data inserted successfully");
+										});
+									}
+								});
+
+								// procedures.push(claimProcedureObj);
+							}
+
+							// const selectQueryForDiagnoses = `SELECT * FROM app_claimdiagnoses WHERE providerId = ?`;
+							// connection.query(selectQueryForDiagnoses, [diag.code], (err, results, fields) => {
+							// 	if (err) {
+							// 		console.error("Error executing query:", err);
+							// 		return;
+							// 	} else {
+							// 		claimDiagnosesObj.diagnosisId = results[0].id;
+							// 		console.log("diagnoses:", results[0].id);
+							// 		const claimsDiagnosesQuery = `INSERT INTO app_claimdiagnoses SET ?`;
+							// 		connection.query(claimsDiagnosesQuery, claimDiagnosesObj, (err, results, fields) => {
+							// 			if (err) {
+							// 				console.error("Error inserting data into Members table:", err);
+							// 				return;
+							// 			}
+							// 			console.log("ClaimProvider data inserted successfully");
+							// 		});
+							// 	}
+							// });
 						}
 					});
 
